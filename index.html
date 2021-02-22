@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <title>Battleship.js</title>
+
+        <link href="css/bulma.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Heading -->
+        <div id="header" class="container has-text-centered">
+            <h1 class="is-size-1">Battleship.js</h1>
+            <h2 class="is-size-4">The classic game in your browser</h2>
+        </div>
+
+        <!-- Board Space -->
+        <div id="board-space" class="container start-game">
+            <div id="start-game" class="has-text-centered">
+                <p>Click the Start button to begin!</p>
+                <p id="no-of-ships-err" class="has-text-danger hide">Please input an integer between 1 and 6.</p>
+                <label class="label">Number of ships:</label>
+                <div class="field has-addons has-addons-centered">
+                    <div class="control">
+                        <input id="no-of-ships" name="no-of-ships" class="input" type="text" placeholder="1-6">
+                    </div>
+                    <div class="control">
+                        <button id="btn-start-game" class="button is-success">
+                        Start!
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="placement-options" class="hide has-text-centered">
+                <div id="axis-controls" class="is-grouped">
+                    <label for="x-axis">X-Axis</label>
+                    <input name="axis" class="radio" id="x-axis" type="radio" checked>
+    
+                    <label for="y-axis">Y-Axis</label>
+                    <input name="axis" class="radio" id="y-axis" type="radio">
+                </div>
+    
+                <div id="ship-selector" class="is-grouped">
+        
+                </div>
+
+                <button id="end-turn" class="button is-danger hide">End Turn</button>
+            </div>
+
+            <div id="board" class="container columns">
+
+            </div>
+
+
+        </div>
+
+        <!-- Hide Screen -->
+        <div id="hide-screen" class="container has-text-centered hide">
+            <h1 class="is-size-1">No peeking!</h1>
+        </div>
+
+        <!-- Win Screen -->
+        <div id="win-screen" class="container has-text-centered hide">
+            <h1 class="is-size-1">Winner!</h1>
+            <p id="player-winner"></p>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="container has-text-centered">
+            <p>&copy; Best Programming Group 2021</p>
+        </footer>
+
+
+        <!-- JavaScript includes -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/board.js"></script>
+        <script type="text/javascript" src="js/ship.js"></script>
+        <script type="text/javascript" src="js/player.js"></script>
+        <script type="text/javascript" src="js/gameboard.js"></script>
+        <script type="text/javascript" src="js/battleship.js"></script>
+        <script type="text/javascript" src="js/game.js"></script>
+        <script type="text/javascript" src="js/__test__.js"></script>
+        </script>
+    </body>
+</html>
